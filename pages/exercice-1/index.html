@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Exo 1 "drawBar"</title>
+    <style>
+    body {
+      margin:         0;
+    }
+    #appRun {
+      background:     #333;
+      overflow: auto;
+      padding: 20px;
+    }
+    #app {
+      width:          100%;
+      min-height:     100vh;
+      background:     #333;
+    }
+    td {
+      width: 50px;
+      height: 50px;
+      background: #f1f1f1;
+    }
+    td:nth-child(odd) {
+      background: #83d0f2;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div id="appRun">
+      <h1>Grid Generator (Current set : 10x12)</h1>
+      <div id="app"></div>
+    </div>
+    <script type="text/javascript" src="js.js"></script>
+    <script type="text/javascript">
+      GridGenerator(10, 12);
+    </script>
+  </body>
+</html>

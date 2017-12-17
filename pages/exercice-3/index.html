@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Exo 3 "MyMorpionXO"</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <style>
+    .container {
+      max-width: 540px;
+    }
+    .exTitle {
+      margin: 15px 0;
+    }
+    .playerStats {
+      width: 100%;
+      margin: 25px 0;
+    }
+    .case {
+      width: 100%;
+      height: 120px;
+      margin: 15px 0;
+    }
+    .hide {
+      display: none;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col">
+          <h1 class="exTitle">MyMorpionXO</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button 
+          data-player-id="X"
+          class="btn playerStats player">Player X <span class="badge badge-secondary"><b>0</b> PTS</span></button>
+        </div>
+        <div class="col">
+          <button 
+          data-player-id="O"
+          class="btn playerStats player">Player O <span class="badge badge-secondary"><b>0</b> PTS</span></button>
+        </div>
+      </div>
+
+      <div id="alertSection" class="row hide">
+        <div class="col">
+          <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading alertTitle">Well done!</h4>
+            <p class="alertDesc">Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+            <hr>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button id="alertAction" data-action="nextRound"    type="button" class="btn btn-secondary">next round</button>
+              <button id="alertAction" data-action="restartPart"  type="button" class="btn btn-light">restart game</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-lg case"></button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-lg case"></button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-lg case"></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-lg case"></button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-lg case"></button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-lg case"></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-lg case"></button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-lg case"></button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-lg case"></button>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="js.js"></script>
+    <script type="text/javascript">
+    var appMorpion = new MyMorpionXO();
+    appMorpion.run();
+    </script>
+  </body>
+</html>

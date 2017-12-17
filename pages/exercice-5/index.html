@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Exo 5 "form validator"</title>
+    <style type="text/css">
+    form {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+    }
+    form * {
+      margin: 6px 0;
+    }
+    form #submit {
+      margin: 25px 0 0 0;
+    }
+    #spanError {
+      color: red;
+      display: block;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+
+      <form>
+        <label for="lastName">Lastname</label>
+        <input type="text" name="lastName" id="lastName" />
+
+        <label for="firstName">Firstname</label>
+        <input type="text" name="firstName" id="firstName" />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+
+        <input type="submit" name="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+    <script type="text/javascript" src="js.js"></script>
+  </body>
+</html>
